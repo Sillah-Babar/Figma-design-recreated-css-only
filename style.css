@@ -1,0 +1,179 @@
+/* font-family: 'Work Sans', sans-serif; */
+*,
+*::before,
+*::after
+{
+  box-sizing: border-box;
+}
+:root{
+  --clr-primary:#F70058;
+  --clr-dark:#0C0E36;
+  --clr-light:#FFF;
+  --fw-normal:400;
+  --fw-bold:600;
+  --fw-black:900;
+  --grid: lfr;
+
+}
+.doc_title
+{
+  color:var( --clr-dark);
+  font-weight:bolder;
+  line-height:1.6rem;
+  letter-spacing:0.06rem;
+}
+body{
+  margin:0;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.125rem;
+  color:var(--clr-dark);
+  line-height: 1.6;
+  background:var(--clr-light);
+}
+header{
+  background-color: var(--clr-light);
+ 
+  text-align: center;
+}
+.logo
+{
+  padding: 1em;
+}
+.nav__list
+{
+  display: flex;
+  justify-content: space-evenly;
+
+  margin:0;
+  
+  padding:1em;
+
+  list-style: none;
+  font-size:0.875rem;
+  text-transform:uppercase;
+  font-weight:var(--fw-bold);
+  letter-spacing:1px;
+  
+
+}
+.nav__link
+{
+  text-decoration: none;
+  color:inherit;
+  
+}
+.weather
+{
+  display:grid;
+  grid-template-columns:min-content,lfr;
+  column-gap: 2px;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  padding: 1em;
+}
+.weather__icon
+{
+
+grid-row:span 2;
+background-color: var(--clr-primary);
+padding:0.5rem;
+margin-left: 3rem;
+margin-right: 40rem;
+display: flex;
+
+}
+.weather__info
+{
+margin:0;
+
+color:rgba(255,255,255,0.7);
+text-align: left;
+letter-spacing: 1px;
+text-transform: uppercase;
+line-height: 1rem;
+font-size: 0.75rem;
+font-weight: (var(--fw-bold));
+display: flex;
+align-items: center;
+}
+
+.weather__info span{
+  opacity: 0.8;
+  margin-left: auto;
+  margin-right:30rem;
+  font-size: 1rem;
+}
+.weather0__info:first-of-type
+{
+  margin-top:0.5rem;
+  position: relative;
+}
+.weather0__info:first-of-type::after
+{
+  content:'';
+  position: absolute;
+  background: var(--clr-light);
+  opacity: 0.25;
+  width: calc(100%-0.75rem);
+  height: 2px;
+  bottom:0;
+}
+.weather__info:last-of-type
+{
+  margin-bottom:0.5em;
+}
+.main
+{
+  padding:3em 1em 10rem;
+
+}
+.main--ski
+{
+  background-image: url('images/back..jpg');
+  background-size: cover;
+  background-attachment:scroll;
+}
+.main_title
+{
+  line-height: 1;
+  font-weight:var(--fw-black);
+  font-size: 3rem;
+}
+.btn
+{
+  display:inline-block;
+  cursor:pointer;
+  padding:0.5em 1.5em;
+  font-size:1rem;
+  text-transform:uppercase;
+  text-decoration:none;
+  margin-right:10px;
+  font-weight:700;
+}
+.btn--primary
+{
+  background-color:var(--clr-primary);
+  color:var(--clr-light);
+
+
+}
+.btn--ghost
+{
+  padding:0.2em 1.5em;
+  background-color:transparent;
+  border:5px solid var(--clr-primary);
+  color:var(--clr-primary);
+}
+.btn--ghost:hover
+{
+background-color:var(--clr-dark);
+color:white;
+border:5px solid var(--clr-dark);
+}
+.btn--primary:hover
+{
+  background-color:var(--clr-dark);
+color:white;
+
+
+}
